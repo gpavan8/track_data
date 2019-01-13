@@ -1,0 +1,4 @@
+fileID = fopen('track1.LLH','r');
+D = textscan(fileID,'%f/%f/%f %f:%f:%f %f %f %f %f %f %f %f %f %f %f %f %f %f','CollectOutput',1)
+D = D{1,1}
+plot(D(:,7),D(:,8))
